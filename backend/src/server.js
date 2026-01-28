@@ -85,9 +85,11 @@ app.use(errorHandler);
 
 // Start Server
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-  console.log(`🚀 PUFF Backend running on http://localhost:${PORT}`);
-  console.log(`📝 API Documentation: http://localhost:${PORT}/api/v1/docs`);
+
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`🚀 PUFF Backend running on port ${PORT}`);
+  console.log(`📘 API Documentation available at /api/v1/docs`);
 });
 
 module.exports = app;
+
