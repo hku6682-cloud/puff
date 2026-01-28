@@ -9,6 +9,10 @@
     "test": "jest",
     "seed": "node src/db/seed.js"
   },
+  "engines": {
+  "node": "18.x"
+}
+
   "keywords": ["social", "media", "creator", "earnings"],
   "author": "",
   "license": "ISC",
